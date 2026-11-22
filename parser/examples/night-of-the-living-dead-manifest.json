@@ -1,0 +1,590 @@
+{
+  "odvd_version": "0.1",
+  "bundle_id": "dvd-46f2f9ab-2aa9-4854-bfb4-b0b4baf35053",
+  "disc": {
+    "title": "Night",
+    "title_from": "disc",
+    "title_source": "iso_filename",
+    "volume_label": null,
+    "video_standard": "NTSC",
+    "disc_side": 1,
+    "disc_count_in_set": 1,
+    "set_id": null,
+    "set_title": null,
+    "region": null,
+    "region_mask": 0,
+    "source_hash": "f542fa14e9ce104d789ab480bae0b3599703128c52889f4b31927dde1c30efdf",
+    "compiled_at": "2026-11-22T06:29:06.984282Z",
+    "compiler": "odvd-parser 0.1.0 (IFO-only)",
+    "codec_profile": "av1",
+    "audio_mode": "ac3-keep"
+  },
+  "vmg": {
+    "first_play_pgc": "vmg-pgc-1",
+    "first_play_commands": {
+      "pre_commands": [
+        {
+          "op": "set",
+          "gprm": 5,
+          "operation": "mov",
+          "value": 0
+        },
+        {
+          "op": "set",
+          "gprm": 6,
+          "operation": "mov",
+          "value": 0
+        },
+        {
+          "op": "set",
+          "gprm": 7,
+          "operation": "mov",
+          "value": 0
+        },
+        {
+          "op": "set",
+          "gprm": 8,
+          "operation": "mov",
+          "value": 0
+        },
+        {
+          "op": "set",
+          "gprm": 9,
+          "operation": "mov",
+          "value": 0
+        },
+        {
+          "op": "jump_ss",
+          "target": "vmgm_pgc",
+          "pgc": 1
+        }
+      ],
+      "post_commands": [],
+      "cell_commands": []
+    },
+    "titles": [
+      {
+        "title_number": 1,
+        "vts": 1,
+        "entry_pgc": "vts1-pgc-1",
+        "duration_seconds": 5711.334,
+        "chapters": 1,
+        "angles": 1
+      }
+    ],
+    "menu_pgcs": [
+      {
+        "id": "vmg-menu-pgc-1",
+        "kind": "menu",
+        "hidden": false,
+        "pre_commands": [
+          {
+            "op": "compare",
+            "operator": "eq",
+            "left": {
+              "gprm": 9
+            },
+            "right": {
+              "value": 0
+            },
+            "then": {
+              "op": "link_pgc",
+              "pgc": 3
+            },
+            "else": null,
+            "gprm": 9,
+            "value": 0
+          },
+          {
+            "op": "compare",
+            "operator": "eq",
+            "left": {
+              "gprm": 9
+            },
+            "right": {
+              "value": 3
+            },
+            "then": {
+              "op": "link_pgc",
+              "pgc": 3
+            },
+            "else": null,
+            "gprm": 9,
+            "value": 3
+          },
+          {
+            "op": "link_pgc",
+            "pgc": 3
+          }
+        ],
+        "programs": [],
+        "post_commands": [],
+        "cell_commands": [],
+        "playback_time_seconds": 0.0,
+        "selected_path_seconds": 0.0,
+        "palette": [
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700"
+        ],
+        "still_time": 0,
+        "next_pgc": null,
+        "prev_pgc": null,
+        "goup_pgc": null,
+        "menu": {
+          "background_segment_hash": null,
+          "background_segment_note": "segments not transcoded in v0.1 parser",
+          "background_loop": false,
+          "audio_track": null,
+          "still": false,
+          "timeout_seconds": null,
+          "palette": [
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700"
+          ],
+          "buttons": [],
+          "buttons_note": "button geometry lives in VOB PCI packets, not in the IFO; PCI parsing is a known v0.1 gap -- see parser README.md"
+        },
+        "language": null,
+        "menu_id": 0,
+        "menu_name": "none",
+        "category_raw": "00000000",
+        "entry": false
+      },
+      {
+        "id": "vmg-menu-pgc-2",
+        "kind": "menu",
+        "hidden": false,
+        "pre_commands": [
+          {
+            "op": "set",
+            "gprm": 1,
+            "operation": "mov",
+            "value": 100
+          },
+          {
+            "op": "compare",
+            "operator": "lt",
+            "left": {
+              "gprm": 6
+            },
+            "right": {
+              "gprm": 1
+            },
+            "then": {
+              "op": "jump_tt",
+              "title": 1
+            },
+            "else": null
+          }
+        ],
+        "programs": [],
+        "post_commands": [],
+        "cell_commands": [],
+        "playback_time_seconds": 0.0,
+        "selected_path_seconds": 0.0,
+        "palette": [
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700",
+          "#008700"
+        ],
+        "still_time": 0,
+        "next_pgc": null,
+        "prev_pgc": null,
+        "goup_pgc": null,
+        "menu": {
+          "background_segment_hash": null,
+          "background_segment_note": "segments not transcoded in v0.1 parser",
+          "background_loop": false,
+          "audio_track": null,
+          "still": false,
+          "timeout_seconds": null,
+          "palette": [
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700"
+          ],
+          "buttons": [],
+          "buttons_note": "button geometry lives in VOB PCI packets, not in the IFO; PCI parsing is a known v0.1 gap -- see parser README.md"
+        },
+        "language": null,
+        "menu_id": 0,
+        "menu_name": "none",
+        "category_raw": "00000000",
+        "entry": false
+      },
+      {
+        "id": "vmg-menu-pgc-3",
+        "kind": "menu",
+        "hidden": false,
+        "pre_commands": [
+          {
+            "op": "set",
+            "gprm": 9,
+            "operation": "mov",
+            "value": 3
+          }
+        ],
+        "programs": [
+          {
+            "program_number": 1,
+            "cells": [
+              {
+                "cell_id": "vmg-menu-pgc-3-cell1",
+                "segment_hash": null,
+                "segment_uri": null,
+                "segment_note": "segments not transcoded in v0.1 parser",
+                "duration_seconds": 9.968,
+                "start_pts_seconds": 0.0,
+                "original_dvd_timecode": "00:00:00:00",
+                "frame_count": 299,
+                "angle": 1,
+                "still": false,
+                "still_seconds": null,
+                "still_infinite": false,
+                "chapter": null,
+                "vob_id": 1,
+                "cell_id_in_vob": 1,
+                "first_sector": 0,
+                "last_sector": 3081,
+                "block_mode": 0,
+                "block_type": 0,
+                "interleaved": false,
+                "cell_command": null
+              }
+            ]
+          }
+        ],
+        "post_commands": [
+          {
+            "op": "link_pgc",
+            "pgc": 3
+          }
+        ],
+        "cell_commands": [],
+        "playback_time_seconds": 9.968,
+        "selected_path_seconds": 9.968,
+        "palette": [
+          "#0000be",
+          "#002700",
+          "#0000be",
+          "#002700",
+          "#002700",
+          "#002700",
+          "#002700",
+          "#002700",
+          "#002700",
+          "#002700",
+          "#002700",
+          "#002700",
+          "#002700",
+          "#002700",
+          "#002700",
+          "#002700"
+        ],
+        "still_time": 0,
+        "next_pgc": null,
+        "prev_pgc": null,
+        "goup_pgc": null,
+        "menu": {
+          "background_segment_hash": null,
+          "background_segment_note": "segments not transcoded in v0.1 parser",
+          "background_loop": false,
+          "audio_track": 0,
+          "still": false,
+          "timeout_seconds": null,
+          "palette": [
+            "#0000be",
+            "#002700",
+            "#0000be",
+            "#002700",
+            "#002700",
+            "#002700",
+            "#002700",
+            "#002700",
+            "#002700",
+            "#002700",
+            "#002700",
+            "#002700",
+            "#002700",
+            "#002700",
+            "#002700",
+            "#002700"
+          ],
+          "buttons": [],
+          "buttons_note": "button geometry lives in VOB PCI packets, not in the IFO; PCI parsing is a known v0.1 gap -- see parser README.md"
+        },
+        "language": null,
+        "menu_id": 2,
+        "menu_name": "title",
+        "category_raw": "82000000",
+        "entry": true
+      }
+    ]
+  },
+  "titlesets": [
+    {
+      "vts": 1,
+      "video_standard": "NTSC",
+      "aspect_ratio": "4:3",
+      "resolution": {
+        "width": 720,
+        "height": 480
+      },
+      "audio_tracks": [
+        {
+          "index": 0,
+          "language": null,
+          "codec": "ac3",
+          "channels": 2,
+          "bitrate_kbps": null,
+          "sample_rate_hz": 48000,
+          "default": true,
+          "code_extension": "unspecified",
+          "present_in_entry_pgc": true
+        }
+      ],
+      "subtitle_tracks": [],
+      "pgcs": [
+        {
+          "id": "vts1-pgc-1",
+          "kind": "title",
+          "hidden": false,
+          "pre_commands": [
+            {
+              "op": "set",
+              "gprm": 7,
+              "operation": "mov",
+              "source": {
+                "gprm": 6
+              }
+            },
+            {
+              "op": "set",
+              "gprm": 6,
+              "operation": "mov",
+              "value": 0
+            }
+          ],
+          "programs": [
+            {
+              "program_number": 1,
+              "cells": [
+                {
+                  "cell_id": "vts1-pgc-1-cell1",
+                  "segment_hash": null,
+                  "segment_uri": null,
+                  "segment_note": "segments not transcoded in v0.1 parser",
+                  "duration_seconds": 5711.334,
+                  "start_pts_seconds": 0.0,
+                  "original_dvd_timecode": "00:00:00:00",
+                  "frame_count": 171169,
+                  "angle": 1,
+                  "still": false,
+                  "still_seconds": null,
+                  "still_infinite": false,
+                  "chapter": 1,
+                  "vob_id": 1,
+                  "cell_id_in_vob": 1,
+                  "first_sector": 0,
+                  "last_sector": 1193042,
+                  "block_mode": 0,
+                  "block_type": 0,
+                  "interleaved": false,
+                  "cell_command": null
+                }
+              ]
+            }
+          ],
+          "post_commands": [
+            {
+              "op": "call_ss",
+              "target": "vmgm_pgc",
+              "pgc": 1,
+              "resume_cell": 1
+            }
+          ],
+          "cell_commands": [],
+          "playback_time_seconds": 5711.334,
+          "selected_path_seconds": 5711.334,
+          "palette": [
+            "#002700",
+            "#002700",
+            "#002700",
+            "#002700",
+            "#002700",
+            "#002700",
+            "#002700",
+            "#002700",
+            "#002700",
+            "#002700",
+            "#002700",
+            "#002700",
+            "#002700",
+            "#002700",
+            "#002700",
+            "#002700"
+          ],
+          "still_time": 0,
+          "next_pgc": null,
+          "prev_pgc": null,
+          "goup_pgc": null,
+          "entry": true
+        },
+        {
+          "id": "vts1-menu-pgc-1",
+          "kind": "menu",
+          "hidden": false,
+          "pre_commands": [
+            {
+              "op": "jump_ss",
+              "target": "vmgm_pgc",
+              "pgc": 1
+            }
+          ],
+          "programs": [],
+          "post_commands": [],
+          "cell_commands": [],
+          "playback_time_seconds": 0.0,
+          "selected_path_seconds": 0.0,
+          "palette": [
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700",
+            "#008700"
+          ],
+          "still_time": 0,
+          "next_pgc": null,
+          "prev_pgc": null,
+          "goup_pgc": null,
+          "menu": {
+            "background_segment_hash": null,
+            "background_segment_note": "segments not transcoded in v0.1 parser",
+            "background_loop": false,
+            "audio_track": null,
+            "still": false,
+            "timeout_seconds": null,
+            "palette": [
+              "#008700",
+              "#008700",
+              "#008700",
+              "#008700",
+              "#008700",
+              "#008700",
+              "#008700",
+              "#008700",
+              "#008700",
+              "#008700",
+              "#008700",
+              "#008700",
+              "#008700",
+              "#008700",
+              "#008700",
+              "#008700"
+            ],
+            "buttons": [],
+            "buttons_note": "button geometry lives in VOB PCI packets, not in the IFO; PCI parsing is a known v0.1 gap -- see parser README.md"
+          },
+          "language": null,
+          "menu_id": 3,
+          "menu_name": "root",
+          "category_raw": "83000000",
+          "entry": true
+        }
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "title": 1,
+      "chapter": 1,
+      "pgc": "vts1-pgc-1",
+      "program": 1,
+      "time_seconds": 0.0,
+      "name": null
+    }
+  ],
+  "dedup": {
+    "asset_store": "assets/",
+    "references": []
+  },
+  "diagnostics": {
+    "parser_version": "0.1.0",
+    "parser": "odvd-parser 0.1.0 (IFO-only)",
+    "input_kind": "iso",
+    "unsupported_commands": [],
+    "unsupported_command_count": 0,
+    "partial_decodes": [],
+    "partial_decode_count": 0,
+    "warnings": [],
+    "vts_parsed": [
+      1
+    ],
+    "vts_declared": 1
+  }
+}

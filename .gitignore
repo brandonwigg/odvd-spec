@@ -1,0 +1,13 @@
+# ODVD spec repo — never commit disc images, downloads, or build artefacts.
+*.iso
+*.img
+*.vob
+*.m2ts
+downloads/
+odvd-test/
+parser-output/
+__pycache__/
+*.pyc
+*.db
+*.sqlite
+.DS_Store
